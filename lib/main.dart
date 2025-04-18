@@ -14,6 +14,6 @@ class Akarati extends StatelessWidget {
 }
 
 //get package
-//fontawsomeicons
+//fontAwesomeIcons
 //loading-animation
-//modalprograssHud
+//modalProgressHud
