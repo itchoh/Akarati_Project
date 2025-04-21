@@ -11,10 +11,6 @@ class Akarati extends StatelessWidget {
     return MaterialApp(
 
     );
-
-
-
-
   }
 }
 
