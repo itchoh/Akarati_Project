@@ -10,7 +10,6 @@ class Akarati extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      lll
     );
 
 
