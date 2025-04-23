@@ -43,6 +43,8 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
             slidingAnimation: logoSlidingAnimation,
             newWidget:Image.asset(
               AssetsData.logo,
+              width: 120,
+              height: 107,
             ),
           ),
           SlidingWidget(

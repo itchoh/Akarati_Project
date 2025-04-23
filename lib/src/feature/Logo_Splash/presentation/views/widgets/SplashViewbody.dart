@@ -22,6 +22,8 @@ class _LogoSplashViewbodyState extends State<LogoSplashViewbody> {
     return Center(
       child: Image.asset(
         AssetsData.logo,
+        width: 120,
+        height: 107,
       ),
     );
   }

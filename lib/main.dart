@@ -1,4 +1,4 @@
-import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
+import 'package:akarati/src/feature/Akarati_Splash/presentation/views/Akarati_Splash_View.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 void main() {
@@ -11,7 +11,7 @@ class Akarati extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-       home: LogoSplashView(),
+       home: AkaratiSplashView(),
     );
   }
 }
