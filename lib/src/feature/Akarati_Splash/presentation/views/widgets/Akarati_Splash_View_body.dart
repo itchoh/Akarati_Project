@@ -24,7 +24,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
   void initState() {
     super.initState();
     initSlidingAnimation();
-    delayed_navigation(LogoSplashView());
+    delayed_navigation(Scaffold());
   }
 
   @override
@@ -76,7 +76,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
     ));
 
     logoSlidingAnimation =
-        Tween<Offset>(begin: Offset(0,0.75), end:  Offset.zero)
+        Tween<Offset>(begin: Offset(0,0.9), end:  Offset.zero)
             .animate(CurvedAnimation(
       parent: animationController,
       curve: Curves.easeOut,

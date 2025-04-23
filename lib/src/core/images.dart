@@ -1,3 +1,3 @@
 class AssetsData {
-  static const logo = 'assets/Logo3.png';
+  static const logo = 'assets/AkaratiLogo_Colored.png';
 }

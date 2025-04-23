@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 void delayed_navigation(Widget NewWidget){
   Future.delayed(
-    Duration(seconds: 3),
+    Duration(seconds: 5),
         () {
       Get.offAll(
             () => NewWidget,
