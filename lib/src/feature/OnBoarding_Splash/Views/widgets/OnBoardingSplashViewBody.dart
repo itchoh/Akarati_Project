@@ -1,10 +1,8 @@
-import 'package:akarati/main.dart';
 import 'package:akarati/src/core/functions.dart';
 import 'package:akarati/src/core/images.dart';
 import 'package:akarati/src/core/styles.dart';
 import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Onboardingsplashviewbody extends StatefulWidget {
   const Onboardingsplashviewbody({super.key});
@@ -18,7 +16,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
   @override
   void initState() {
     super.initState();
-    // delayed_navigation(LogoSplashView());
+     delayed_navigation(LogoSplashView());
   }
 
   @override
@@ -41,7 +39,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
         ),
         Positioned(
             left: 13,
-            top: 380,
+            top: 365,
             child: SizedBox(
               width: 310,
               child: Text(
@@ -51,25 +49,18 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
             )),
         Positioned(
           left: 13,
-          top: 628,
+          top: 640,
           child: Text(
             'Find Your Dream Property Today',
-            style: TextStyle(
-              color: const Color(0xFFD4E7FF),
-              fontSize: 16,
-              fontFamily: 'Inter',
-              fontWeight: FontWeight.w500,
-            ),
+            style: Styles.textStyleInter16,
           ),
         ),
-        // Positioned(
-        //   right: -1,
-        //   top: 677,
-        //   bottom: -36,
-        //   child: Image.asset(
-        //     AssetsData.UnderWaves,
-        //   ),
-        // ),
+        Positioned(
+          top: 700,
+          child: Image.asset(
+            AssetsData.UnderWaves,
+          ),
+        ),
       ],
     );
   }

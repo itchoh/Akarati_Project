@@ -25,13 +25,18 @@ abstract class Styles {
   );
   static TextStyle textStyle48 = GoogleFonts.montserrat(
     color: Colors.white,
-    fontSize: 40,
+    fontSize: 37,
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyle54 = GoogleFonts.montserrat(
     color: Colors.black,
     fontSize: 54,
     fontWeight: FontWeight.w700,
+  );
+  static TextStyle textStyleInter16 = GoogleFonts.inter(
+    color: const Color(0xFFD4E7FF),
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
   );
 }
 
