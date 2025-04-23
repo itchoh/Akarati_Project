@@ -2,7 +2,7 @@ import 'package:akarati/src/core/constants.dart';
 import 'package:akarati/src/core/images.dart';
 import 'package:akarati/src/core/styles.dart';
 import 'package:akarati/src/feature/Akarati_Splash/presentation/views/widgets/sliding_text.dart';
-import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
+import 'package:akarati/src/feature/OnBoarding_Splash/Views/OnBoarding_Splash_View.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:akarati/src/core/functions.dart';
@@ -24,7 +24,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
   void initState() {
     super.initState();
     initSlidingAnimation();
-    delayed_navigation(Scaffold());
+    delayed_navigation(OnboardingSplashView());
   }
 
   @override
@@ -42,7 +42,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
           SlidingWidget(
             slidingAnimation: logoSlidingAnimation,
             newWidget:Image.asset(
-              AssetsData.logo,
+              AssetsData.AkaratiColoredLogo,
               width: 120,
               height: 107,
             ),

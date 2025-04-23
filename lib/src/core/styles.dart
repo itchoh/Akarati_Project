@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 abstract class Styles {
   static const textStyle14 = TextStyle(
@@ -22,11 +23,15 @@ abstract class Styles {
     fontWeight: FontWeight.w900,
     letterSpacing: 1.2,
   );
-  static const textStyle54 = TextStyle(
+  static TextStyle textStyle48 = GoogleFonts.montserrat(
+    color: Colors.white,
+    fontSize: 40,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle textStyle54 = GoogleFonts.montserrat(
     color: Colors.black,
     fontSize: 54,
-    fontFamily: 'Montserrat',
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w700,
   );
 }
 

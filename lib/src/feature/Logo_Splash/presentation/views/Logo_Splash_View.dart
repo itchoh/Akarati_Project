@@ -1,4 +1,4 @@
-import 'package:akarati/src/feature/Logo_Splash/presentation/views/widgets/SplashViewbody.dart';
+import 'package:akarati/src/feature/Logo_Splash/presentation/views/widgets/LogoSplashViewbody.dart';
 import 'package:flutter/material.dart';
 
 class LogoSplashView extends StatelessWidget {

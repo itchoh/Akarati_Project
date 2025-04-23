@@ -21,7 +21,7 @@ class _LogoSplashViewbodyState extends State<LogoSplashViewbody> {
   Widget build(BuildContext context) {
     return Center(
       child: Image.asset(
-        AssetsData.logo,
+        AssetsData.AkaratiColoredLogo,
         width: 120,
         height: 107,
       ),
