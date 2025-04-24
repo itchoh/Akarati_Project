@@ -23,9 +23,14 @@ abstract class Styles {
     fontWeight: FontWeight.w900,
     letterSpacing: 1.2,
   );
-  static TextStyle textStyle48 = GoogleFonts.montserrat(
+  static TextStyle textStyle37 = GoogleFonts.montserrat(
     color: Colors.white,
     fontSize: 37,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle textStyle64 = GoogleFonts.inter(
+    color: Colors.white,
+    fontSize: 50,
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyle54 = GoogleFonts.montserrat(
@@ -37,6 +42,16 @@ abstract class Styles {
     color: const Color(0xFFD4E7FF),
     fontSize: 16,
     fontWeight: FontWeight.w500,
+  );
+  static TextStyle textStyleInterWhite16 = GoogleFonts.inter(
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle textStyleInterWhite28 = GoogleFonts.inter(
+    color: const Color(0xFFD4E7FF),
+    fontSize: 28,
+    fontWeight: FontWeight.w700,
   );
 }
 

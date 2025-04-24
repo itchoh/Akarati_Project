@@ -2,6 +2,7 @@ import 'package:akarati/src/core/functions.dart';
 import 'package:akarati/src/core/images.dart';
 import 'package:akarati/src/core/styles.dart';
 import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
+import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/Welcome_Splash_View.dart';
 import 'package:flutter/material.dart';
 
 class Onboardingsplashviewbody extends StatefulWidget {
@@ -16,7 +17,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
   @override
   void initState() {
     super.initState();
-     delayed_navigation(LogoSplashView());
+     delayed_navigation(WelcomeSplashView());
   }
 
   @override
@@ -44,7 +45,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
               width: 310,
               child: Text(
                 'The Ultimate Real Estate Solution',
-                style: Styles.textStyle48,
+                style: Styles.textStyle37,
               ),
             )),
         Positioned(
