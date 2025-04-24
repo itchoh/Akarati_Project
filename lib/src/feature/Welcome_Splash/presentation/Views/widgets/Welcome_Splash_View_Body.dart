@@ -37,7 +37,7 @@ class _WelcomeSplashViewBodyState extends State<WelcomeSplashViewBody> {
           left: 16,
           child: Text(
             'Time to make things happen,',
-            style: Styles.textStyleInterWhite16
+            style: Styles.textStyleInterWhite12,
           ),
         ),
         Positioned(
@@ -45,7 +45,7 @@ class _WelcomeSplashViewBodyState extends State<WelcomeSplashViewBody> {
           left: 16,
           child: Text(
             'Ahmed Mohamed !',
-            style: Styles.textStyleInterWhite28
+            style: Styles.textStyleInterWhite22,
           ),
         ),
         Positioned(
@@ -55,7 +55,7 @@ class _WelcomeSplashViewBodyState extends State<WelcomeSplashViewBody> {
               width: 333,
               child: Text(
                 'Let’s begin the journey!',
-                style: Styles.textStyle64,
+                style: Styles.textStyle50,
               ),
             )),
         Positioned(
@@ -63,7 +63,7 @@ class _WelcomeSplashViewBodyState extends State<WelcomeSplashViewBody> {
           top: 570,
           child: Text(
             'Explore Properties Now',
-            style: Styles.textStyleInter16,
+            style: Styles.textStyleInter12,
           ),
         ),
         Positioned(

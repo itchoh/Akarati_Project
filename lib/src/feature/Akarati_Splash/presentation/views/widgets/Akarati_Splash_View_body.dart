@@ -60,7 +60,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
                 height: 66,
                 child: Text(
                   akarati,
-                  style: Styles.textStyle54,
+                  style: Styles.textStyle41,
                 ),
               ),
             ),

@@ -58,7 +58,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
           top: 640,
           child: Text(
             'Find Your Dream Property Today',
-            style: Styles.textStyleInter16,
+            style: Styles.textStyleInter12,
           ),
         ),
         Positioned(
