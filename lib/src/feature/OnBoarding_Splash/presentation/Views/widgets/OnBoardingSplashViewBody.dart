@@ -4,6 +4,7 @@ import 'package:akarati/src/core/styles.dart';
 import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
 import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/Welcome_Splash_View.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Onboardingsplashviewbody extends StatefulWidget {
   const Onboardingsplashviewbody({super.key});
@@ -17,7 +18,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
   @override
   void initState() {
     super.initState();
-     delayed_navigation(WelcomeSplashView());
+    delayed_navigation(WelcomeSplashView());
   }
 
   @override
@@ -27,14 +28,18 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
         Positioned(
           left: 16,
           top: 74,
-          child: Image.asset(
+          right: 310,
+          bottom: 706,
+          child: SvgPicture.asset(
             AssetsData.AkaratiUnColoredLogo,
           ),
         ),
         Positioned(
           left: 65,
           top: 91,
-          child: Image.asset(
+          bottom: 433,
+          right: 5,
+          child: SvgPicture.asset(
             AssetsData.Buildings,
           ),
         ),
@@ -58,7 +63,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
         ),
         Positioned(
           top: 700,
-          child: Image.asset(
+          child: SvgPicture.asset(
             AssetsData.UnderWaves,
           ),
         ),

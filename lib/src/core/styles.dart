@@ -35,22 +35,22 @@ abstract class Styles {
   );
   static TextStyle textStyle54 = GoogleFonts.montserrat(
     color: Colors.black,
-    fontSize: 54,
+    fontSize: 41,
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyleInter16 = GoogleFonts.inter(
     color: const Color(0xFFD4E7FF),
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyleInterWhite16 = GoogleFonts.inter(
     color: Colors.white,
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyleInterWhite28 = GoogleFonts.inter(
     color: const Color(0xFFD4E7FF),
-    fontSize: 28,
+    fontSize: 22,
     fontWeight: FontWeight.w700,
   );
 }

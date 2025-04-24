@@ -36,27 +36,42 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Stack(
         children: [
-          SlidingWidget(
-            slidingAnimation: logoSlidingAnimation,
-            newWidget:Image.asset(
-              AssetsData.AkaratiColoredLogo,
-              width: 120,
-              height: 107,
+          Positioned(
+            top: 345,
+            left: 135,
+            child: SlidingWidget(
+              slidingAnimation: logoSlidingAnimation,
+              newWidget:Image.asset(
+                AssetsData.AkaratiColoredLogo,
+                width: 120,
+                height: 107,
+              ),
             ),
           ),
-          SlidingWidget(
-            slidingAnimation: textSlidingAnimation,
-            newWidget: Text(
-              akarati,
-              style: Styles.textStyle54,
+          Positioned(
+            top: 438,
+            left: 96,
+            child: SlidingWidget(
+              slidingAnimation: textSlidingAnimation,
+              newWidget: SizedBox(
+                width: 199,
+                height: 66,
+                child: Text(
+                  akarati,
+                  style: Styles.textStyle54,
+                ),
+              ),
             ),
           ),
-          LoadingAnimationWidget.waveDots(
-            color: Colors.black,
-            size: 48,
+          Positioned(
+            top: 510,
+            left: 171,
+            child: LoadingAnimationWidget.waveDots(
+              color: Colors.black,
+              size: 48,
+            ),
           ),
         ],
       ),
@@ -64,6 +79,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
   }
 
   void initSlidingAnimation() {
+
     animationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 1),
@@ -76,7 +92,7 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
     ));
 
     logoSlidingAnimation =
-        Tween<Offset>(begin: Offset(0,0.9), end:  Offset.zero)
+        Tween<Offset>(begin: Offset(0,1), end:  Offset.zero)
             .animate(CurvedAnimation(
       parent: animationController,
       curve: Curves.easeOut,
