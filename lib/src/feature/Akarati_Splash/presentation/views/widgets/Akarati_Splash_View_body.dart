@@ -1,6 +1,7 @@
 import 'package:akarati/src/core/constants.dart';
 import 'package:akarati/src/core/images.dart';
 import 'package:akarati/src/core/styles.dart';
+import 'package:akarati/src/feature/Akarati_Splash/presentation/views/widgets/classes.dart';
 import 'package:akarati/src/feature/Akarati_Splash/presentation/views/widgets/sliding_text.dart';
 import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/OnBoarding_Splash_View.dart';
 import 'package:flutter/material.dart';
@@ -38,41 +39,9 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
     return Center(
       child: Stack(
         children: [
-          Positioned(
-            top: 345,
-            left: 135,
-            child: SlidingWidget(
-              slidingAnimation: logoSlidingAnimation,
-              newWidget:Image.asset(
-                AssetsData.AkaratiColoredLogo,
-                width: 120,
-                height: 107,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 438,
-            left: 96,
-            child: SlidingWidget(
-              slidingAnimation: textSlidingAnimation,
-              newWidget: SizedBox(
-                width: 199,
-                height: 66,
-                child: Text(
-                  akarati,
-                  style: Styles.textStyle41,
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            top: 510,
-            left: 171,
-            child: LoadingAnimationWidget.waveDots(
-              color: Colors.black,
-              size: 48,
-            ),
-          ),
+          Akarati_logo(logoSlidingAnimation: logoSlidingAnimation),
+          Akarati_Text(textSlidingAnimation: textSlidingAnimation),
+          LoadingAnimation(),
         ],
       ),
     );
@@ -101,3 +70,4 @@ class _AkaratiSplashViewbodyState extends State<AkaratiSplashViewbody>
     animationController.forward();
   }
 }
+
