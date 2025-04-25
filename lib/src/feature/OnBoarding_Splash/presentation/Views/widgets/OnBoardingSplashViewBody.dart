@@ -1,12 +1,8 @@
 import 'package:akarati/src/core/Utilties.dart';
 import 'package:akarati/src/core/functions.dart';
-import 'package:akarati/src/core/images.dart';
-import 'package:akarati/src/core/styles.dart';
-import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
 import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/widgets/classes.dart';
 import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/Welcome_Splash_View.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Onboardingsplashviewbody extends StatefulWidget {
   const Onboardingsplashviewbody({super.key});

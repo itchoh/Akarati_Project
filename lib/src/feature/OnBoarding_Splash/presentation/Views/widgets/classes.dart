@@ -1,4 +1,3 @@
-
 import 'package:akarati/src/core/images.dart';
 import 'package:akarati/src/core/styles.dart';
 import 'package:flutter/material.dart';
