@@ -68,7 +68,7 @@ class Arrow_Image extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       left: 16,
-      top: 640,
+      top: 620,
       child: SvgPicture.asset(
         AssetsData.Arrow,
       ),

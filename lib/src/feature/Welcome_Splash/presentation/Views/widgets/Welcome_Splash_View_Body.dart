@@ -26,7 +26,7 @@ class _WelcomeSplashViewBodyState extends State<WelcomeSplashViewBody> {
         Text12W(),
         Text22(),
         Text50(),
-        Text12(text: 'Explore Properties Now'),
+        Text12(text: 'Explore Properties Now', top: 580, left:16 ,),
         Arrow_Image(),
         UnderWater_Image(),
       ],

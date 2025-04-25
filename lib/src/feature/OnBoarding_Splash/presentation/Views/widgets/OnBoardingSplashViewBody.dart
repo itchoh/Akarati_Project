@@ -26,7 +26,7 @@ class _OnboardingsplashviewbodyState extends State<Onboardingsplashviewbody> {
         Logo_Uncolored(),
         Building_image(),
         Text37(),
-        Text12(text: 'Find Your Dream Property Today'),
+        Text12(text: 'Find Your Dream Property Today', left: 13, top: 640,),
         UnderWater_Image(),
       ],
     );
