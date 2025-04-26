@@ -7,6 +7,11 @@ abstract class Styles {
     fontSize: 12,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle textStyleInter16 = GoogleFonts.inter(
+    color:Colors.black,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle textStyleInterWhite12 = GoogleFonts.inter(
     color: Colors.white,
     fontSize: 12,
