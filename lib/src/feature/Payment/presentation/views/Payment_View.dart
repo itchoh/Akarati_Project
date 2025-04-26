@@ -21,23 +21,7 @@ class Payment_View extends StatelessWidget {
   }
 }
 
-class Text14 extends StatelessWidget {
-  const Text14({
-    super.key, required this.text,
-  });
-final String text;
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: GoogleFonts.inter(
-        color: Colors.black,
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-      ),
-    );
-  }
-}
+
 
 
 

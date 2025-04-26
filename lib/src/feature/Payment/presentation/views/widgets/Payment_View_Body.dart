@@ -1,6 +1,6 @@
 import 'package:akarati/src/core/Utilties.dart';
 import 'package:akarati/src/core/images.dart';
-import 'package:akarati/src/feature/Payment/presentation/views/Payment_View.dart';
+import 'package:akarati/src/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,7 +21,7 @@ class PaymentViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(),
-              Text14(text: 'Select Payment Method',),
+              Text14W500(text: 'Select Payment Method',),
               Payment_Radio_Buttons(),
               Paid_Amount(),
               Currency(),
@@ -89,7 +89,6 @@ class Currency extends StatelessWidget {
     );
   }
 }
-
 class Paid_Amount extends StatelessWidget {
   const Paid_Amount({
     super.key,
@@ -141,7 +140,6 @@ class Paid_Amount extends StatelessWidget {
     );
   }
 }
-
 class Payment_Radio_Buttons extends StatelessWidget {
   const Payment_Radio_Buttons({
     super.key,
@@ -303,8 +301,6 @@ class Payment_Radio_Buttons extends StatelessWidget {
     );
   }
 }
-
-
 class Amount_Card extends StatelessWidget {
   const Amount_Card({
     super.key,
@@ -333,7 +329,7 @@ class Amount_Card extends StatelessWidget {
         children: [
           SizedBox(
               width: 345,
-              child: Text14(text: 'Total Amount',)
+              child: Text14W500(text: 'Total Amount',)
           ),
           Text(
             '1,598,316.00 AED ',
@@ -345,6 +341,19 @@ class Amount_Card extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+class Text14W500 extends StatelessWidget {
+  const Text14W500({
+    super.key, required this.text,
+  });
+  final String text;
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: Styles.textStyleInter14,
     );
   }
 }
