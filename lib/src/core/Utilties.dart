@@ -2,6 +2,7 @@ import 'package:akarati/src/core/images.dart';
 import 'package:akarati/src/core/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 
@@ -136,6 +137,36 @@ class AmountToPay extends StatelessWidget {
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+
+class Button extends StatelessWidget {
+  const Button({
+    super.key, required this.text,
+  });
+  final String text;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: 52,
+      decoration: ShapeDecoration(
+        color: const Color(0xFF295488),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8)),
+      ),
+      child: Center(
+        child: Text(
+          text,
+          style: GoogleFonts.inter(
+            color: Colors.white,
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
       ),
     );
   }

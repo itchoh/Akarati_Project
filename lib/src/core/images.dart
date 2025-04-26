@@ -6,4 +6,5 @@ class AssetsData {
   static const Arrow = "assets/Arrow_Right.svg";
   static const Cash_icon="assets/Cash_icon.svg";
   static const ArrowLeft_Logo="assets/ArrowLeft_Logo.svg";
+  static const ArrowDown_icon="assets/ArrowDown_Icon.svg";
 }
