@@ -1,6 +1,9 @@
-import 'package:akarati/src/core/Utils.dart';
 import 'package:akarati/src/core/functions.dart';
-import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/widgets/classes.dart';
+import 'package:akarati/src/core/widgets/Logo_UnColored.dart';
+import 'package:akarati/src/core/widgets/text12.dart';
+import 'package:akarati/src/core/widgets/underWater_Image.dart';
+import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/widgets/Building_Image.dart';
+import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/widgets/Text37.dart';
 import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/Welcome_Splash_View.dart';
 import 'package:flutter/material.dart';
 

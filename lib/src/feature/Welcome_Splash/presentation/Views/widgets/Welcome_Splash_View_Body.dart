@@ -1,8 +1,12 @@
-import 'package:akarati/src/core/Utils.dart';
 import 'package:akarati/src/core/functions.dart';
-import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
+import 'package:akarati/src/core/widgets/Logo_UnColored.dart';
+import 'package:akarati/src/core/widgets/text12.dart';
+import 'package:akarati/src/core/widgets/underWater_Image.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/Payment_View.dart';
-import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/widgets/classes.dart';
+import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/widgets/Arrow_Image.dart';
+import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/widgets/Text12W.dart';
+import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/widgets/Text22.dart';
+import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/widgets/Text50.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeSplashViewBody extends StatefulWidget {
