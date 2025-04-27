@@ -1,4 +1,4 @@
-import 'package:akarati/src/core/constants.dart';
+import 'package:akarati/src/core/constants/colors.dart';
 import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/widgets/OnBoardingSplashViewBody.dart';
 import 'package:flutter/material.dart';
 class OnboardingSplashView extends StatelessWidget {
@@ -7,7 +7,7 @@ class OnboardingSplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Akarati_color,
+      backgroundColor:AppColor.Akarati_color,
     body: Onboardingsplashviewbody(),
     );
   }

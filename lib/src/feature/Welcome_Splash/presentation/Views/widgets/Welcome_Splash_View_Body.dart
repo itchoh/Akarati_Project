@@ -1,4 +1,4 @@
-import 'package:akarati/src/core/Utilties.dart';
+import 'package:akarati/src/core/Utils.dart';
 import 'package:akarati/src/core/functions.dart';
 import 'package:akarati/src/feature/Logo_Splash/presentation/views/Logo_Splash_View.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/Payment_View.dart';

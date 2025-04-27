@@ -1,5 +1,5 @@
-import 'package:akarati/src/core/images.dart';
-import 'package:akarati/src/core/styles.dart';
+import 'package:akarati/src/core/constants/images.dart';
+import 'package:akarati/src/core/constants/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 class Text12W extends StatelessWidget {

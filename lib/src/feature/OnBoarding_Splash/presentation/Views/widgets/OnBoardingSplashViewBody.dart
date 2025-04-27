@@ -1,4 +1,4 @@
-import 'package:akarati/src/core/Utilties.dart';
+import 'package:akarati/src/core/Utils.dart';
 import 'package:akarati/src/core/functions.dart';
 import 'package:akarati/src/feature/OnBoarding_Splash/presentation/Views/widgets/classes.dart';
 import 'package:akarati/src/feature/Welcome_Splash/presentation/Views/Welcome_Splash_View.dart';

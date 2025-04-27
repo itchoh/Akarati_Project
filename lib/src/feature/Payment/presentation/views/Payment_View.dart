@@ -1,9 +1,8 @@
-import 'package:akarati/src/core/images.dart';
-import 'package:akarati/src/core/styles.dart';
+import 'package:akarati/src/core/constants/images.dart';
+import 'package:akarati/src/core/constants/styles.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/widgets/Payment_View_Body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Payment_View extends StatelessWidget {
   const Payment_View({super.key});

@@ -1,7 +1,6 @@
-
-import 'package:akarati/src/core/constants.dart';
-import 'package:akarati/src/core/images.dart';
-import 'package:akarati/src/core/styles.dart';
+import 'package:akarati/src/core/constants/images.dart';
+import 'package:akarati/src/core/constants/styles.dart';
+import 'package:akarati/src/core/constants/texts.dart';
 import 'package:akarati/src/feature/Akarati_Splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
