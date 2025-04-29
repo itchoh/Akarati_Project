@@ -7,4 +7,8 @@ class AssetsData {
   static const Cash_icon="assets/Cash_icon.svg";
   static const ArrowLeft_Logo="assets/ArrowLeft_Logo.svg";
   static const ArrowDown_icon="assets/ArrowDown_Icon.svg";
+  static const BankTransfer="assets/Bank_Transfer.svg";
+  static const Cheque="assets/Cheque.svg";
+  static const Credit_Card="assets/Credit_Card.svg";
+  static const Radio_Button="assets/Radio-Button.svg";
 }

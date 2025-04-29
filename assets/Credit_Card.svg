@@ -1,0 +1,25 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Clip path group">
+<mask id="mask0_1844_230" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<g id="clipPath7094794092">
+<path id="Vector" d="M0 0H24V24H0V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1844_230)">
+<g id="Group">
+<g id="Clip path group_2">
+<mask id="mask1_1844_230" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<g id="clipPath9875094579">
+<path id="Vector_2" d="M0 0H24V24H0V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_1844_230)">
+<g id="Group_2">
+<path id="Vector_3" d="M0 19.3333C0 20.4375 0.895833 21.3334 2 21.3334H22C23.1042 21.3334 24 20.4375 24 19.3333V12H0V19.3333ZM8 16.5C8 16.2251 8.225 16.0001 8.5 16.0001H14.1667C14.4417 16.0001 14.6667 16.2251 14.6667 16.5V18.1667C14.6667 18.4417 14.4417 18.6667 14.1667 18.6667H8.5C8.225 18.6667 8 18.4417 8 18.1667V16.5ZM2.66667 16.5C2.66667 16.2251 2.89167 16.0001 3.16667 16.0001H6.16667C6.44167 16.0001 6.66667 16.2251 6.66667 16.5V18.1667C6.66667 18.4417 6.44167 18.6667 6.16667 18.6667H3.16667C2.89167 18.6667 2.66667 18.4417 2.66667 18.1667V16.5ZM24 4.66666V6.66667H0V4.66666C0 3.56249 0.895833 2.66666 2 2.66666H22C23.1042 2.66666 24 3.56249 24 4.66666Z" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
