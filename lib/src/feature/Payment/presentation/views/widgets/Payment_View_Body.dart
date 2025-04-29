@@ -1,10 +1,12 @@
 import 'package:akarati/src/core/widgets/Button.dart';
+import 'package:akarati/src/feature/Payment/presentation/manger/payment_details_cubit.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/widgets/Amount_card.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/widgets/Currency.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/widgets/PaidAmount.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/widgets/Payment_radio_Button.dart';
 import 'package:akarati/src/feature/Payment/presentation/views/widgets/Text14W500.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class PaymentViewBody extends StatelessWidget {
   const PaymentViewBody({super.key});
@@ -23,7 +25,10 @@ class PaymentViewBody extends StatelessWidget {
             children: [
               SizedBox(),
               Text14W500(text: 'Select Payment Method',),
-              Payment_Radio_Buttons(),
+              BlocProvider(
+                create: (_) => PaymentMethodCubit(),
+                child: Payment_Radio_Buttons(),
+              ),
               Paid_Amount(),
               Currency(),
               Button(text: 'Confirm Payment',),
