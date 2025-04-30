@@ -9,7 +9,6 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
       height: 52,
       decoration: ShapeDecoration(
         color: const Color(0xFF295488),

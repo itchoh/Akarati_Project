@@ -1,9 +1,19 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:bloc/bloc.dart';
 
-class PaymentMethodCubit extends Cubit<String> {
-  PaymentMethodCubit() : super('Cash'); // Default no selection
+part 'payment_details_state.dart';
+
+class PaymentMethodCubit extends Cubit<PaymentDetailsState> {
+  PaymentMethodCubit() : super(CashPayment());
 
   void selectMethod(String method) {
-    emit(method);
+    if (method == "Cash") {
+      emit(CashPayment());
+    } else if (method == "Credit") {
+      emit(CreditPayment());
+    } else if (method == "Bank") {
+      emit(BankPayment());
+    } else if (method == "ChequeDetails") {
+      emit(ChequePayment());
+    }
   }
 }

@@ -9,7 +9,7 @@ class Text14W500 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: Styles.textStyleInter14,
+      style: Styles.textStyleInter12W,
     );
   }
 }

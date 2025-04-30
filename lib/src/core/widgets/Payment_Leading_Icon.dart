@@ -10,12 +10,9 @@ class Payment_Leading_icon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 8.0),
-      child: IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset(
+      child: SvgPicture.asset(
           AssetsData.ArrowLeft_Logo,
         ),
-      ),
-    );
+      );
   }
 }

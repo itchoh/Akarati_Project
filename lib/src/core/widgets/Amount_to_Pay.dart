@@ -1,80 +1,67 @@
 import 'package:akarati/src/core/constants/images.dart';
+import 'package:akarati/src/core/constants/styles.dart';
+import 'package:akarati/src/core/widgets/RectangleContainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
 class AmountToPay extends StatelessWidget {
   const AmountToPay({
-    super.key,
+    super.key, required this.text,
   });
-
+  final String text;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(16),
-      decoration: ShapeDecoration(
-        color: const Color(0xFFEAF3FF),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
+    return RectangleContainer(
+      widthP: 16,
+      height: 202,
+      newWidget: Container(
+        decoration: ShapeDecoration(
+          color: const Color(0xFFEAF3FF),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
         ),
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 16,
-        children: [
-          SizedBox(
-            width: 326,
-            child: Text(
-              'Amount to Pay',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 14,
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
-          SizedBox(
-            width: 326,
-            child: Text(
-              '1,598,316.00 AED ',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30,
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-          ),
-          Divider(thickness: 1,height: 20,),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            spacing: 12,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                width: 24,
-                height: 22,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(),
-                child:  SvgPicture.asset(
-                  AssetsData.Cash_icon,
-                ),
-              ),
-              Text(
-                'Cash',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w500,
-                ),
+             Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+               children: [
+                 SizedBox(height: 16,),
+                 Text(
+                   'Amount to Pay',
+                   style: Styles.textStyleInter14,
+                 ),
+                 SizedBox(height: 6,),
+                 Text(
+                   '1,598,316.00 AED',
+                   style: Styles.textStyle28,
+                 ),
+                 SizedBox(height: 16,),
+                 Divider(
+                   thickness: 1,
+                   height: 20,
+                 ),
+               ],
+             ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                spacing: 12,
+                children: [
+                  SvgPicture.asset(
+                    AssetsData.Cash_icon,
+                  ),
+                  Text(
+                    text,
+                    style: Styles.textStyleInter16,
+                  ),
+                ],
               ),
             ],
           ),
-        ],
+        ),
       ),
     );
   }

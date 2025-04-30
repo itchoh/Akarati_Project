@@ -12,6 +12,16 @@ abstract class Styles {
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle textStyleInter12W = GoogleFonts.inter(
+    color: Colors.black,
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle textStyleInter14W700 = GoogleFonts.inter(
+    color: Colors.black,
+    fontSize: 16,
+    fontWeight: FontWeight.w700,
+  );
 
   static TextStyle textStyleInter16 = GoogleFonts.inter(
     color:Colors.black,
@@ -31,6 +41,11 @@ abstract class Styles {
   static TextStyle textStyle37 = GoogleFonts.montserrat(
     color: Colors.white,
     fontSize: 37,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle textStyle28 = GoogleFonts.inter(
+    color: Colors.black,
+    fontSize: 28,
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyle50 = GoogleFonts.inter(

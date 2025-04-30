@@ -2,5 +2,10 @@ part of 'payment_details_cubit.dart';
 
 sealed class PaymentDetailsState {}
 
-final class PressedPayment extends PaymentDetailsState {}
-final class NotPressedPayment extends PaymentDetailsState {}
+final class CashPayment extends PaymentDetailsState {}
+
+final class CreditPayment extends PaymentDetailsState {}
+
+final class BankPayment extends PaymentDetailsState {}
+
+final class ChequePayment extends PaymentDetailsState {}
