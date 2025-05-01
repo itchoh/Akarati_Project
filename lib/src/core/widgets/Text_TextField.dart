@@ -1,6 +1,7 @@
 import 'package:akarati/src/core/widgets/CustomTextField.dart';
 import 'package:akarati/src/core/widgets/Rich_Text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 
 class Text_TextField extends StatelessWidget {
@@ -8,12 +9,12 @@ class Text_TextField extends StatelessWidget {
     super.key,
     required this.text,
     required this.textField,
-    this.icon,
+    this.image,
   });
 
   final String text;
   final String textField;
-  final Icon? icon;
+  final SvgPicture? image;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class Text_TextField extends StatelessWidget {
         richText(text: text,text2: "*",),
         CustomTextField(
           text: textField,
-          icon: icon,
+          image: image,
         ),
       ],
     );

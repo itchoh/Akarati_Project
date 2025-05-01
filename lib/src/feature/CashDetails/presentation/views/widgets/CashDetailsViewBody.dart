@@ -18,7 +18,7 @@ class CashDetailsViewBody extends StatelessWidget {
         children: [
           SizedBox(),
           AmountToPay(
-            text: 'Cash',
+            text: 'Cash', icon:  AssetsData.Cash_icon,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -39,7 +39,7 @@ class CashDetailsViewBody extends StatelessWidget {
                 Text_TextField(
                   text: 'Payment Date',
                   textField: "Select date",
-                  icon: Icon(Icons.date_range),
+                  image: SvgPicture.asset(AssetsData.Calendar_Icon),
 
                 ),
                 Text_TextField(

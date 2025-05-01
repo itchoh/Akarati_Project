@@ -1,8 +1,10 @@
+import 'package:akarati/src/core/constants/images.dart';
 import 'package:akarati/src/core/widgets/Amount_to_Pay.dart';
 import 'package:akarati/src/core/widgets/Button.dart';
 import 'package:akarati/src/core/widgets/CustomTextContainer.dart';
 import 'package:akarati/src/core/widgets/Text_TextField.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class BankTransferDetailsViewBody extends StatelessWidget {
   const BankTransferDetailsViewBody({super.key});
@@ -15,7 +17,7 @@ class BankTransferDetailsViewBody extends StatelessWidget {
         children: [
           SizedBox(),
           AmountToPay(
-            text: 'Bank Transfer',
+            text: 'Bank Transfer', icon:  AssetsData.BankTransfer,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -26,7 +28,7 @@ class BankTransferDetailsViewBody extends StatelessWidget {
                 Text_TextField(
                   text: 'Payment Date',
                   textField: "DD/MM/YYYY",
-                  icon: Icon(Icons.date_range),
+                    image:SvgPicture.asset(AssetsData.Calendar_Icon),
 
                 ),
                 Text_TextField(

@@ -17,7 +17,7 @@ class ChequeDetailsViewBody extends StatelessWidget {
         children: [
           SizedBox(),
           AmountToPay(
-            text: 'Cheque',
+            text: 'Cheque', icon:  AssetsData.Cheque,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -42,12 +42,12 @@ class ChequeDetailsViewBody extends StatelessWidget {
                 Text_TextField(
                   text: 'Payment Date',
                   textField: "DD/MM/YYYY",
-                  icon: Icon(Icons.date_range),
+                  image:SvgPicture.asset(AssetsData.Calendar_Icon),
                 ),
                 Text_TextField(
                   text: 'Cheque Due Date',
                   textField: "DD/MM/YYYY",
-                  icon: Icon(Icons.date_range),
+                  image:SvgPicture.asset(AssetsData.Calendar_Icon),
                 ),
                 Button(
                   text: 'Save Payment',

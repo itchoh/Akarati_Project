@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -6,11 +7,11 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
     required this.text,
-    this.icon,
+    this.image,
   });
 
   final String text;
-  final Icon? icon;
+  final SvgPicture? image;
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +30,11 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         fillColor: const Color(0xFFF6FAFF),
         hintText: text,
-
-        suffixIcon:icon ,
+        suffixIcon:Padding(
+          padding: const EdgeInsets.only(right: 16.0),
+          child: image,
+        ) ,
+        suffixIconConstraints:BoxConstraints() ,
         hintStyle: GoogleFonts.inter(
           color: const Color(0xFF9CA3AF),
           fontSize: 14,

@@ -1,4 +1,3 @@
-import 'package:akarati/src/core/constants/images.dart';
 import 'package:akarati/src/core/constants/styles.dart';
 import 'package:akarati/src/core/widgets/RectangleContainer.dart';
 import 'package:flutter/material.dart';
@@ -6,9 +5,10 @@ import 'package:flutter_svg/svg.dart';
 
 class AmountToPay extends StatelessWidget {
   const AmountToPay({
-    super.key, required this.text,
+    super.key, required this.text, required this.icon,
   });
   final String text;
+  final String icon;
   @override
   Widget build(BuildContext context) {
     return RectangleContainer(
@@ -43,6 +43,7 @@ class AmountToPay extends StatelessWidget {
                  Divider(
                    thickness: 1,
                    height: 20,
+                   color: const Color(0xFF295488),
                  ),
                ],
              ),
@@ -51,7 +52,8 @@ class AmountToPay extends StatelessWidget {
                 spacing: 12,
                 children: [
                   SvgPicture.asset(
-                    AssetsData.Cash_icon,
+                   icon,
+                    color: const Color(0xFF295488),
                   ),
                   Text(
                     text,

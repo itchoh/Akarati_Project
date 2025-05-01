@@ -11,4 +11,8 @@ class AssetsData {
   static const Cheque="assets/Cheque.svg";
   static const Credit_Card="assets/Credit_Card.svg";
   static const Radio_Button="assets/Radio-Button.svg";
+  static const Whatsapp_Icon="assets/whatsapp_icon.svg";
+  static const Copy_Icon="assets/Copy.svg";
+  static const Calendar_Icon="assets/Calendar.svg";
+  // static const ="";
 }
