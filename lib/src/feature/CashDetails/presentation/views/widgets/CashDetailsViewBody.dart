@@ -18,7 +18,8 @@ class CashDetailsViewBody extends StatelessWidget {
         children: [
           SizedBox(),
           AmountToPay(
-            text: 'Cash', icon:  AssetsData.Cash_icon,
+            text: 'Cash',
+            icon: AssetsData.Cash_icon,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -31,22 +32,22 @@ class CashDetailsViewBody extends StatelessWidget {
                   containerText: 'AED - UAE Durham',
                   widget: SvgPicture.asset(
                     AssetsData.ArrowDown_icon,
-
                   ),
-                  color:  const Color(0xFFF9FAFB),
+                  color: const Color(0xFFF9FAFB),
                 ),
                 CustomText_Container(),
                 Text_TextField(
                   text: 'Payment Date',
                   textField: "Select date",
                   image: SvgPicture.asset(AssetsData.Calendar_Icon),
-
                 ),
                 Text_TextField(
                   text: 'Conversion Rate',
                   textField: "Enter conversation rate",
                 ),
-                SizedBox(),
+                SizedBox(
+                  height: 20,
+                ),
                 Button(
                   text: 'Save Payment',
                 ),
@@ -58,42 +59,3 @@ class CashDetailsViewBody extends StatelessWidget {
     );
   }
 }
-
-//TextFormField(
-//       textCapitalization: TextCapitalization.words,
-//       textAlign: TextAlign.left,
-//       //keyboardType: TextInputType.visiblePassword,
-//       validator: (b) {
-//         return null;
-//       },
-//       onChanged: (m) {},
-//       onSaved: (u) {},
-//       autofocus: true,
-//       //keyboardType: TextInputType.none,
-//       // keyboardType: TextInputType.number,
-//       // keyboardType: TextInputType.emailAddress,
-//       textInputAction: TextInputAction.next,
-//       inputFormatters: [
-//         FilteringTextInputFormatter.deny(
-//           RegExp(
-//             r'[^a-zA-Z0-9@.]',
-//           ),
-//         )
-//       ],
-//       autovalidateMode:
-//           AutovalidateMode.onUserInteraction, // Validates in real-time
-//       obscureText: true,
-//       obscuringCharacter: "*",
-//       autocorrect: true,
-//       // maxLines: 3,
-//       //maxLength: 20,
-//       decoration: InputDecoration(
-//         border: OutlineInputBorder(),
-//         enabledBorder: OutlineInputBorder(),
-//         focusedBorder: OutlineInputBorder(),
-//         labelText: "password",
-//         hintText: "ho",
-//         // contentPadding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
-//         // floatingLabelBehavior: FloatingLabelBehavior.never, // Default behavior
-//       ),
-//     )

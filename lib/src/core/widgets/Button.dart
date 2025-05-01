@@ -9,7 +9,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 52,
+      height: 60,
       decoration: ShapeDecoration(
         color: const Color(0xFF295488),
         shape: RoundedRectangleBorder(
@@ -20,7 +20,7 @@ class Button extends StatelessWidget {
           text,
           style: GoogleFonts.inter(
             color: Colors.white,
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: FontWeight.w600,
           ),
         ),

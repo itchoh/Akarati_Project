@@ -10,8 +10,10 @@ final Widget widget;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.white,
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.white,
         title: Payment_Title(),
         centerTitle: true,
